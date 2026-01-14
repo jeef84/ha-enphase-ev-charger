@@ -2217,10 +2217,10 @@ class EnphaseCoordinator(DataUpdateCoordinator[dict]):
         enforce_mode: str | None = None
         if mode == "MANUAL_CHARGING":
             include_level = True
-            strict = True
+            # strict = True
         elif mode == "SCHEDULED_CHARGING":
             include_level = True
-            strict = True
+            # strict = True
             enforce_mode = "SCHEDULED_CHARGING"
         elif mode == "GREEN_CHARGING":
             include_level = False
